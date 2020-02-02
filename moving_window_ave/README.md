@@ -6,5 +6,5 @@ recursive average computation extended to a moving window.
 The Makefile has a *plot* command which uses `gnuplot` to create visualization.
 Otherwise the binary output `filter` will print the test input and output to `stdout`.
 
-![sample plot](./sample_plot.jpg)
+![sample plot](./sample_plot.png)
 
