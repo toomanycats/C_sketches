@@ -1,0 +1,19 @@
+set term x11 persist background rgb 'grey'
+set datafile separator ','
+
+set title "Moving Average Test"
+set ylabel "Amplitude"
+unset xlabel
+set grid ytics lt 0 lw 2 lc rgb "#ffffff"
+set grid xtics lt 0 lw 2 lc rgb "#ffffff"
+
+set multiplot layout 2,1
+
+set format y "%.1f"
+plot 'data.csv' using 0:1 with lines title "Input"
+
+unset title
+set xlabel "Time"
+plot 'data.csv' using 0:2 with lines title "Averaged"
+
+unset multiplot

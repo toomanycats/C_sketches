@@ -1,0 +1,17 @@
+.\" Manpage for `filter'.
+.\" Contact dpcuneo@fastmail.fm to correct errors or typos.
+.TH man 8 "2020-01-07" "1.0" "filter man page"
+.SH NAME
+filter \- Test a moving average filter and output x and y data.
+.SH SYNOPSIS
+filter
+.SH DESCRIPTION
+Creates short test waveform and averages it. Both input waveform and
+the averaged waveform are output as a comma delimited ascii stream to stdout.
+
+The shell script `plot_data.sh' will build `filter' and execute it,
+redirecting stdout to a file, then run `gnuplot'.
+.SH OPTIONS
+Does not take any options.
+.SH AUTHOR
+dpcuneo
